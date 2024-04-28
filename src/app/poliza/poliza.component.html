@@ -1,0 +1,11 @@
+<div *ngFor="let Polizas of Poliza.polizas">
+    <h2>Polizas</h2>
+    <p>ID:{{ Polizas.id }}</p>
+    <p>Fecha:{{ Polizas.fecha }}</p>
+    <h2>Objetos Asegurados</h2>
+    <ul>
+        <li *ngFor="let objeto of Polizas.objetos_asegurados">
+            {{ objeto.nombre }} - Valor: {{ objeto.valor }}
+        </li>
+    </ul>
+</div>

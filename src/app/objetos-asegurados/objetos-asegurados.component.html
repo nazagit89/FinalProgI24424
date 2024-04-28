@@ -1,0 +1,9 @@
+<h1>¡Bienvenidos!</h1>
+<div *ngIf="compania_aseguradora?.compania_aseguradora">
+    <h2>Nombre:{{ compania_aseguradora?.compania_aseguradora?.nombre}}</h2>
+    <p>Direccion:{{ compania_aseguradora?.compania_aseguradora?.direccion}}</p>
+    <p>Telefono:{{ compania_aseguradora?.compania_aseguradora?.telefono}}</p>
+
+</div>
+
+<app-poliza></app-poliza>
